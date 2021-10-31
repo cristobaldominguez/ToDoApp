@@ -4,9 +4,11 @@ import handlebars from 'express-handlebars'
 
 // Routes
 import mainRoutes from './routes/main.js'
+import todosRoutes from './routes/todos.js'
 
 // Server
 const app = express()
+app.use('/api/v1/todos', todosRoutes)
 app.use(mainRoutes)
 
 // Handlebars
