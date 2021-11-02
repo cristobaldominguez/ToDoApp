@@ -1,0 +1,9 @@
+<li class="todos__todo" data-id="{{id}}">
+    <label class="form-control">
+        <input type="checkbox" name="checkbox" class="input__checkbox" data-url="/api/v1/todos/{{id}}/toggle_done" {{#if done}} checked {{/if}}/>
+    </label>
+    <div class="input__textarea {{#if done}} line-through {{/if}}" role="textbox" contenteditable="true">{{todo.content}}</div>
+    <div class="input__trash">
+        {{> _trash}}
+    </div>
+</li>

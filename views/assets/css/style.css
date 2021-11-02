@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/TitilliumWeb-Italic.eot');
+    src: url('../fonts/TitilliumWeb-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TitilliumWeb-Italic.woff2') format('woff2'),
+        url('../fonts/TitilliumWeb-Italic.woff') format('woff'),
+        url('../fonts/TitilliumWeb-Italic.ttf') format('truetype'),
+        url('../fonts/TitilliumWeb-Italic.svg#TitilliumWeb-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/TitilliumWeb-BoldItalic.eot');
+    src: url('../fonts/TitilliumWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TitilliumWeb-BoldItalic.woff2') format('woff2'),
+        url('../fonts/TitilliumWeb-BoldItalic.woff') format('woff'),
+        url('../fonts/TitilliumWeb-BoldItalic.ttf') format('truetype'),
+        url('../fonts/TitilliumWeb-BoldItalic.svg#TitilliumWeb-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/TitilliumWeb-Bold.eot');
+    src: url('../fonts/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TitilliumWeb-Bold.woff2') format('woff2'),
+        url('../fonts/TitilliumWeb-Bold.woff') format('woff'),
+        url('../fonts/TitilliumWeb-Bold.ttf') format('truetype'),
+        url('../fonts/TitilliumWeb-Bold.svg#TitilliumWeb-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/TitilliumWeb-ExtraLightItalic.eot');
+    src: url('../fonts/TitilliumWeb-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TitilliumWeb-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/TitilliumWeb-ExtraLightItalic.woff') format('woff'),
+        url('../fonts/TitilliumWeb-ExtraLightItalic.ttf') format('truetype'),
+        url('../fonts/TitilliumWeb-ExtraLightItalic.svg#TitilliumWeb-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/TitilliumWeb-Light.eot');
+    src: url('../fonts/TitilliumWeb-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TitilliumWeb-Light.woff2') format('woff2'),
+        url('../fonts/TitilliumWeb-Light.woff') format('woff'),
+        url('../fonts/TitilliumWeb-Light.ttf') format('truetype'),
+        url('../fonts/TitilliumWeb-Light.svg#TitilliumWeb-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/TitilliumWeb-ExtraLight.eot');
+    src: url('../fonts/TitilliumWeb-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TitilliumWeb-ExtraLight.woff2') format('woff2'),
+        url('../fonts/TitilliumWeb-ExtraLight.woff') format('woff'),
+        url('../fonts/TitilliumWeb-ExtraLight.ttf') format('truetype'),
+        url('../fonts/TitilliumWeb-ExtraLight.svg#TitilliumWeb-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/TitilliumWeb-Black.eot');
+    src: url('../fonts/TitilliumWeb-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TitilliumWeb-Black.woff2') format('woff2'),
+        url('../fonts/TitilliumWeb-Black.woff') format('woff'),
+        url('../fonts/TitilliumWeb-Black.ttf') format('truetype'),
+        url('../fonts/TitilliumWeb-Black.svg#TitilliumWeb-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/TitilliumWeb-SemiBold.eot');
+    src: url('../fonts/TitilliumWeb-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TitilliumWeb-SemiBold.woff2') format('woff2'),
+        url('../fonts/TitilliumWeb-SemiBold.woff') format('woff'),
+        url('../fonts/TitilliumWeb-SemiBold.ttf') format('truetype'),
+        url('../fonts/TitilliumWeb-SemiBold.svg#TitilliumWeb-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/TitilliumWeb-Regular.eot');
+    src: url('../fonts/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TitilliumWeb-Regular.woff2') format('woff2'),
+        url('../fonts/TitilliumWeb-Regular.woff') format('woff'),
+        url('../fonts/TitilliumWeb-Regular.ttf') format('truetype'),
+        url('../fonts/TitilliumWeb-Regular.svg#TitilliumWeb-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/TitilliumWeb-LightItalic.eot');
+    src: url('../fonts/TitilliumWeb-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TitilliumWeb-LightItalic.woff2') format('woff2'),
+        url('../fonts/TitilliumWeb-LightItalic.woff') format('woff'),
+        url('../fonts/TitilliumWeb-LightItalic.ttf') format('truetype'),
+        url('../fonts/TitilliumWeb-LightItalic.svg#TitilliumWeb-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url('../fonts/TitilliumWeb-SemiBoldItalic.eot');
+    src: url('../fonts/TitilliumWeb-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TitilliumWeb-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/TitilliumWeb-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/TitilliumWeb-SemiBoldItalic.ttf') format('truetype'),
+        url('../fonts/TitilliumWeb-SemiBoldItalic.svg#TitilliumWeb-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --color-text: #222;
+    --color-disabled: #999;
+    --color-low-contrast: #333;
+    --blue: #0079FF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium', sans-serif;
+    color: var(--color-text);
+    --color-border: #ccc;
+}
+
+a {
+    color: var(--blue);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-text);
+        color: white;
+        --color-border: var(--color-low-contrast);
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 .5em;
+    width: 100%;
+}
+
+.todos {}
+
+.todos__todo {
+    display: grid;
+    list-style: none;
+    padding: 1.25em;
+    border-bottom: 1px solid var(--color-border);
+    grid-template-columns: 1em auto 1em;
+    gap: 0.5em;
+}
+.todos__todo:last-child {
+    border-bottom: none;
+}
+
+.form-control {
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.1;
+    position: relative;
+    width: 100%;
+}
+
+.form-control + .form-control {
+    margin-top: 1em;
+}
+
+.input__checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--form-background);
+    border: 0.1em solid currentColor;
+    border-radius: 0.15em;
+    color: currentColor;
+    display: grid;
+    font: inherit;
+    height: 1.15em;
+    margin: 0;
+    place-content: center;
+    position: absolute;
+    top: 4px;
+    transform: translateY(-0.075em);
+    width: 1.15em;
+}
+
+.input__textarea {
+    color: currentColor;
+    display: block;
+    line-height: 20px;
+    min-height: 1.25em;
+    overflow: hidden;
+    padding: 1px 0;
+    pointer-events: none;
+    resize: both;
+    width: 100%;
+}
+
+.input__trash {}
+.input__trash .input__trash-can {
+    height: 1em;
+}
+
+.input__trash .input__trash-can:hover {
+    color: tomato;
+}
+
+.input__checkbox::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    background-color: currentColor;
+    color: currentColor;
+}
+
+.input__checkbox:checked {
+    color: var(--color-disabled);
+}
+
+.input__checkbox:checked::before {
+    transform: scale(1);
+    color: currentColor;
+}
+
+.input__checkbox:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+}
+
+.options {
+    text-align: center;
+    padding: 3em;
+}
+
+.options__plus-btn {
+    text-decoration: none;
+    width: 50px;
+    transition: color .5s ease-in-out;
+}
+
+.options__plus-btn:hover {
+    color: tomato;
+}
+
+.line-through {
+    color: var(--color-disabled);
+    text-decoration: line-through;
+}

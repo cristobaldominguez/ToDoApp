@@ -2,7 +2,7 @@ import pool from '../pool.js'
 
 async function get_todos() {
   const query = {
-    text: `SELECT * FROM todos order by id`,
+    text: `SELECT * FROM todos WHERE active = true order by id`,
     values: []
   }
 
@@ -18,7 +18,7 @@ async function get_todos() {
 
 async function get_todo(id) {
   const query = {
-    text: `SELECT * FROM todos WHERE id = $1`,
+    text: `SELECT * FROM todos WHERE id = $1 AND active = true `,
     values: [id]
   }
 
@@ -32,10 +32,29 @@ async function get_todo(id) {
   }
 }
 
-async function new_todo(content) {
+async function new_todo(content, done = false) {
   const query = {
-    text: `INSERT INTO todos (content) VALUES ($1) RETURNING *`,
-    values: [content]
+    text: `INSERT INTO todos (content, done) VALUES ($1, $2) RETURNING *`,
+    values: [content, done]
+  }
+
+  try {
+    const result = await pool.query(query)
+    return result.rows[0]
+
+  } catch (e) {
+    console.error(e)
+    return e
+  }
+}
+
+async function toggle_done(id) {
+  const current_todo = await get_todo(id)
+  const done = !current_todo.done
+  
+  const query = {
+    text: `UPDATE todos SET done = $1, updated_at = CURRENT_TIMESTAMP WHERE id = $2 RETURNING *`,
+    values: [done, id]
   }
 
   try {
@@ -66,10 +85,10 @@ async function update_todo(id, content, done = false) {
 
 async function delete_todo(id) {
   const query = {
-    text: `UPDATE todos SET done = true, updated_at = CURRENT_TIMESTAMP WHERE id = $1 RETURNING *`,
+    text: `UPDATE todos SET active = false, updated_at = CURRENT_TIMESTAMP WHERE id = $1 RETURNING *`,
     values: [id]
   }
-  
+
   try {
     const result = await pool.query(query)
     return result.rows[0]
@@ -85,5 +104,6 @@ export {
   get_todos,
   new_todo,
   update_todo,
-  delete_todo
+  delete_todo,
+  toggle_done
 }
