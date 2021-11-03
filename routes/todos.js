@@ -25,15 +25,6 @@ router.get('/new', async (req, res) => {
     res.set({ 'content-type': 'text/html; charset=utf-8' })
     res.render('todos/new', { layout: 'clean', todos: todo });
   }
-
-  // if (req.accepts('json')) {
-  //   res.send({ error: 'Not found' });
-  //   return;
-  // }
-
-  // res.set({ 'content-type': 'application/json; charset=utf-8' })
-  // res.end(JSON.stringify(todos))
-  // res.status(200).send(JSON.stringify(todo))
 })
 
 // GET /api/v1/todos/1
@@ -45,7 +36,7 @@ router.get('/:id', async (req, res) => {
   res.end(JSON.stringify(todo))
 })
 
-// GET /api/v1/todos/1
+// GET /api/v1/todos/
 router.get('/', async (req, res) => {
   const todos = await get_todos()
 
